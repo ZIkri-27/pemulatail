@@ -1278,16 +1278,7 @@ video {
     margin-right: 2rem;
   }
 
-  .xl\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .xl\:w-1\/2 {
     width: 50%;
-  }
-
-  .xl\:w-10\/12 {
-    width: 83.333333%;
   }
 }
