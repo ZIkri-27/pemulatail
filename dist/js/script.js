@@ -18,3 +18,17 @@ hamburger.addEventListener('click', function () {
   hamburger.classList.toggle('hamburger-active');
   navMenu.classList.toggle('hidden');
 });
+
+// Select all links with class 'nav-link'
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const targetId = link.getAttribute('href').substring(1); // Get the ID without '#'
+    const targetElement = document.getElementById(targetId);
+
+    // Scroll to the target element
+    targetElement.scrollIntoView({
+      behavior: 'smooth' // Smooth scroll effect
+    });
+  });
+});
